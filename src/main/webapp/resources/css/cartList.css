@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+
+ 	li { list-style: none; }
+		
+ 	div#container_box { width: 850px; margin: 20px auto; }
+
+ 	section#content { margin:10px; }
+ 	section#content ul li img { width:250px; height:250px; }
+ 	section#content ul li::after { content:""; display:block; clear:both; }
+ 	
+ 	section#content ul li:nth-child(2) { display: flex; align-items: center; padding-bottom: 20px; }
+ 	div.thumb { margin-right: 30px; }
+ 	
+ 	section#content div.gdsInfo { font-size:20px; line-height:2; margin-left: 180px; }
+ 	section#content div.gdsInfo span { display:inline-block; width:100px; font-weight:bold; margin-right:10px; }
+ 	section#content div.gdsInfo .delete { text-align:right; }
+ 	section#content div.gdsInfo .delete button { font-size:18px;
+            padding:5px 10px; border:1px solid #eee; background:#eee }
+            
+	.allCheck { float:left; width:200px; line-height: 3.5; }
+	.allCheck input { width:16px; height:16px; }
+	.allCheck label { margin-left:10px; }
+	.delBtn { float:right; width:300px; text-align:right; }
+	.delBtn button { font-size:18px; padding:5px 10px; border:1px solid #eee; 
+			background:#eee; margin-bottom:10px;}
+	
+	.checkBox { float:left; width:30px; }
+	.checkBox input { width:16px; height:16px; }
+	
+	.listResult { padding:10px; background:#4e73df; }
+	.listResult .sum { float:left; width:45%; font-size:22px; color: #fff; padding-left: 10px; }
+	
+	.listResult .orderOpne { float:right; width:45%; text-align:right; }
+	.listResult .orderOpne button { font-size:17px; padding:5px 10px; border:1px solid #999; background:#fff;}
+	.listResult .orderOpne button:hover { color: #4e73df; }
+	
+	.listResult::after { content:""; display:block; clear:both; } 
+	
+	.orderInfo { border:5px solid #4e73df; padding:20px; display:none; }
+	.orderInfo .inputArea { margin:10px 0; }
+	.orderInfo .inputArea label { display:inline-block; width:120px; margin-right:10px; }
+	.orderInfo .inputArea input { font-size:14px; padding:5px; }
+	#userAddr2, #userAddr3 { width:250px; }
+	
+	.orderInfo .inputArea:last-child { margin-top:30px; }
+	.orderInfo .inputArea button { font-size:20px; border:2px solid #4e73df; padding:5px 10px; 
+						background:#fff; margin-right:20px;}
+						
+	.orderInfo .inputArea button:hover { background: #4e73df; color: #fff; }					
+
+	.orderInfo .inputArea #sample2_address { width:230px; }
+	.orderInfo .inputArea #sample2_detailAddress { width:280px; }
+	.orderInfo .inputArea #sample2_extraAddress { display:none; }	            
+
